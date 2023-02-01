@@ -7,7 +7,7 @@
 */
 
 
-require_once('videocard.php');
+require_once('videocard.php'); // you should never write absolute paths, use a relative path with __DIR__ instead
 
 $asus = new videocard(5);
 $gigabyte = new videocard(3);
