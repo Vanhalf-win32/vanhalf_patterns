@@ -1,11 +1,13 @@
 <?php
 
-require_once('interface.php');
+// You should use a separate file for each class
 
+require_once('interface.php'); // please use namespace and autoload instead of direct require
 
-class videocard implements blockInterface 
+// class name should start with a capital letter
+class Videocard implements blockInterface 
 {
-    public $price;
+    private $price; // no need for this field to be public
 
     public function __construct($price) {
         $this->price = $price;
@@ -18,8 +20,9 @@ class videocard implements blockInterface
 
 class Box implements blockInterface
 {
-    public $block = [];
-    public $price;
+    // same thing here - you must prevent users from directly accessing your class properties
+    private $block = [];
+    private $price;
 
     public function getPrice() {
         return $this->price;
