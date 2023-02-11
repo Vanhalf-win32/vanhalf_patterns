@@ -7,9 +7,8 @@ require_once __DIR__ . '/circle.php';
 require_once __DIR__ . '/triangle.php';
 require_once __DIR__ . '/square.php';
 
-
-
-class shapeMaker {
+class shapeMaker 
+{
     public $circle;
     public $triangle;
     public $square;
