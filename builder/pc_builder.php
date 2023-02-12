@@ -1,4 +1,5 @@
 <?php
+namespace builder;
 
 require_once __DIR__ . '/main.php';
 require_once __DIR__ . '/director.php';
@@ -27,16 +28,16 @@ class cheapBuilder extends pcBuilder
 {
     public function getMotherboard()
     {
-        $this->pc->getMotherboard('ASUS');
+        $this->pc->setMotherboard('ASUS');
     }
 
     public function getProcessor()
     {
-        $this->pc->getProcessor('INTEL');
+        $this->pc->setProcessor('INTEL');
     }
     
     public function getMemmory()
     {
-        $this->pc->getMemmory('KINGSTONE');  
+        $this->pc->setMemmory('KINGSTONE');  
     }
 }
