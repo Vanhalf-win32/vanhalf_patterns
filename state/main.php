@@ -19,13 +19,13 @@ class developer
 
     public function changeActivity() {
         if ($this->activity instanceof sleep) {
-            return $this->activity->setActivity(new coding());
+            $this->setActivity(new coding());
         } elseif ($this->activity instanceof coding) {
-            return $this->activity->setActivity(new playing());
+            $this->setActivity(new playing());
         } elseif ($this->activity instanceof playing) {
-            return $this->activity->setActivity(new reading());
+            $this->setActivity(new reading());
         } elseif ($this->activity instanceof reading) {
-            return $this->activity->setActivity(new sleep());
+            $this->setActivity(new sleep());
         }
     }
 
