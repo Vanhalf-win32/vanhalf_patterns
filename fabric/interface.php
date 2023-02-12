@@ -3,4 +3,3 @@
 interface Phone {
     public function call();
 };
-

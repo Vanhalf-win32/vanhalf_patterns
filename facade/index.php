@@ -24,5 +24,3 @@ $shapeTriangle->getTriangle();
 echo "\n";
 $shapeSquare->getSquare();
 echo "\n";
-
-
